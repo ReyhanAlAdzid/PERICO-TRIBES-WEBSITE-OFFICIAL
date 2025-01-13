@@ -1,6 +1,7 @@
 # <img src="IMAGES/PERICO_TRIBES.png" alt="PERICO TRIBES Logo" width="300" />
 
 # PERICO COMMUNITY
+# WEBSITE RESMI PERICO Hubungi kami di DISCORD RESMI PERICO [Discord](https://discord.gg/Pf4GkQCdMZ)  
 ## PERICO TRIBES
 
 ### ABOUT PERICO
