@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     color: #333;
 }
 
@@ -17,11 +17,11 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #2b2a2a;
-    padding: 5px 10px;
+    padding: 10px;
 }
 
 .navbar .logo img {
-    width: 80px;
+    width: 120px;
 }
 
 .nav-links {
@@ -30,7 +30,7 @@ body {
 }
 
 .nav-links li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .nav-links a {
@@ -51,10 +51,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
-    position: relative;
+    padding: 0 20px;
     background: url('IMAGES/PERICO FOTO RAME.png') no-repeat center center/cover;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
 .home::before {
@@ -64,38 +65,27 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
 .home-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
     z-index: 2;
-}
-
-.text-container {
     max-width: 600px;
-    animation: fadeInLeft 1.5s ease-out;
 }
 
 .text-container h1 {
-    font-size: 120px;
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-size: 48px;
     color: #d1a15e;
-    animation: slideInLeft 1s ease-out;
 }
 
 .text-container p {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 20px;
     color: #fff;
-    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .btn-discord {
@@ -106,7 +96,6 @@ body {
     color: #fff;
     text-transform: uppercase;
     transition: background-color 0.3s;
-    display: inline-block;
 }
 
 .btn-discord:hover {
@@ -115,20 +104,14 @@ body {
 
 .logo-container {
     position: relative;
-    animation: zoomIn 1.5s ease-out;
-    transition: transform 0.5s ease;
-}
-
-.logo-container:hover {
-    transform: scale(1.1);
+    margin-top: 20px;
 }
 
 .logo-image {
-    max-width: 600px;
-    animation: bounceIn 2s ease-out;
+    width: 100%;
 }
 
-/* Structure Section */
+/* Struktur Section */
 .struktur {
     padding: 80px 20px;
     text-align: center;
@@ -136,86 +119,67 @@ body {
 }
 
 .struktur h2 {
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 30px;
     font-weight: bold;
     color: #fff;
 }
 
-/* Responsive Layout */
-@media only screen and (max-width: 768px) {
-    .home {
-        flex-direction: column;
-        padding: 20px;
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    margin: 10px;
+}
+
+.member h3 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.member p {
+    font-size: 16px;
+    color: #bbb;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
     }
 
-    .home-content {
+    .home {
         flex-direction: column;
         text-align: center;
     }
 
-    .text-container h1 {
-        font-size: 60px;
+    .home-content {
+        align-items: center;
+        text-align: center;
     }
 
-    .text-container p {
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content p {
         font-size: 18px;
     }
 
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .nav-links a {
-        font-size: 16px;
-    }
-
     .logo-container img {
-        width: 80%;
+        max-width: 80%;
     }
 
-    .team, .pengurus {
+    .team {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .member {
-        margin: 10px 0;
-    }
-
-    .tribes-structure {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tribe-member {
-        margin: 10px 0;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .text-container h1 {
-        font-size: 40px;
-    }
-
-    .text-container p {
-        font-size: 16px;
-    }
-
-    .nav-links a {
-        font-size: 14px;
-    }
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    background-color: #111;
-    text-align: center;
-    color: #bbb;
-}
+/* Add other sections and media queries for responsiveness here */
